@@ -5,7 +5,6 @@ from django.http import HttpResponse
 
 def base(request): #создаём функцию
     return render(request, 'shop/base.html') # в кавычках отбражаем ссылка на HTML. то что будет отображаться
-# вместо HttpResponse используем метод render
 
 
 def product(request):
