@@ -1,12 +1,17 @@
-from django.shortcuts import render, redirect
-from django.urls import path
-from . import views
-from django.http import HttpResponse
-
-def base(request): #создаём функцию
-    return render(request, 'shop/base.html') # в кавычках отбражаем ссылка на HTML. то что будет отображаться
-# вместо HttpResponse используем метод render
+from django.shortcuts import render, get_object_or_404
+from .models import Product
 
 
-def product(request):
-    return render(request, 'shop/product/detail.html')
+
+def product_list(request, ):
+    products = Product.objects.filter(available=True)
+
+    return render(request, 'shop/product/list.html',
+                  {
+                      'products': products
+                  })
+
+def product_detail(request, id, slug):
+    product = get_object_or_404(Product, id=id, slug=slug, available=True)
+    return render(request, 'shop/product/detail.html', {'product': product
+                                                        })
