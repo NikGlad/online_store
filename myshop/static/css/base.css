@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+#header{
+    text-align: center;
+    font-size: 30px;
+    background-image: url("../img2/8.jpg");
+    background-size: 100%;
+}
+#header a{
+    display:inline-block;
+    padding:70px;
+    color: #343030;
+    font-weight: bold;
+}
+#subheader{
+    text-align: right;
+    color: #ab2e2e;
+    font-size: 30px;
+    background: linear-gradient(#f1e7d8, #f0b74a);
+    height: 100px;
+    font-weight: bold;
+}
