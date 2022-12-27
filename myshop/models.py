@@ -4,6 +4,7 @@ from django.urls import reverse
 class Product(models.Model):
 
 
+
     name = models.CharField(max_length=150, db_index=True, verbose_name='Наименование')
     slug = models.CharField(max_length=150, db_index=True, unique=True, verbose_name='Ссылка')
     image = models.ImageField(upload_to='product/%Y/%m/%d', blank=True)
