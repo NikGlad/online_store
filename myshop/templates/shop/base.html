@@ -18,7 +18,7 @@
 <a href="/" class="logo">Контакты</a>
 <a href="/" class="logo">О пользе мёда!</a>
 <a href="/" class="logo">Мои заказы</a>
-<a href="/" class="logo">Личный кабинет</a>
+
 
 </div>
 <div id="subheader">
@@ -27,12 +27,15 @@
         {% if cart|length > 0 %}
         В корзине
         <a href="{% url 'cart:cart_detail' %}">
-             товаров на сумму {{ cart.get_total_price }}
+             товаров на сумму {{ cart.get_total_price }}р
         </a>
         {% else %}
         Корзина пустая
         {% endif %}
         {% endwith %}
+    <p class="text-right">
+    <a href="#" class="button">Оформить заказ</a>
+  </p>
     </div>
 </div>
 <div id="content">
