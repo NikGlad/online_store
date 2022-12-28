@@ -9,7 +9,7 @@
     <h1>Корзина покупок</h1>
   <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">В магазин</a>
-    <a href="ordering/detail.html" class="button">Оформить заказ</a>
+    <a href="#" class="button">Оформить заказ</a>
   </p>
   <table class="cart">
     <thead>
@@ -45,15 +45,15 @@
             <td>
               {{ item.quantity }}
             </td>
-            <td class="num">{{ item.price }}р</td>
-            <td class="num">{{ item.total_price }}р</td>
+            <td class="num">{{ item.price }}</td>
+            <td class="num">{{ item.total_price }}</td>
           </tr>
         {% endwith %}
       {% endfor %}
       <tr class="total">
         <td>Всего</td>
         <td colspan="4"></td>
-        <td class="num">{{ cart.get_total_price }}р</td>
+        <td class="num">{{ cart.get_total_price }}</td>
       </tr>
     </tbody>
   </table>
