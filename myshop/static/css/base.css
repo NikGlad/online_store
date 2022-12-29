@@ -17,8 +17,12 @@
     color: #ab2e2e;
     font-size: 30px;
     background: linear-gradient(#f1e7d8, #f0b74a);
-    height: 100px;
+    height: 140px;
     font-weight: bold;
+}
+
+.button{
+    margin-top: 30px;
 }
 
 
