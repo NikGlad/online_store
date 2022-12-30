@@ -7,9 +7,11 @@
 
 {% block content %}
     <h1>Оформеление заказа</h1>
+    <p class="ord">Общая стоимость {{ cart.get_total_price }}р</p>
   <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">В магазин</a>
         <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
+
   </p>
   <table class="cart">
     <thead>
