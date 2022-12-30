@@ -23,7 +23,7 @@
         <th>Общая стоимость</th>
       </tr>
     </thead>
-    <tbody>
+    <body>
       {% for item in cart %}
         {% with product=item.product %}
           <tr>
@@ -55,7 +55,12 @@
         <td colspan="4"></td>
         <td class="num">{{ cart.get_total_price }}р</td>
       </tr>
-    </tbody>
+    </body>
   </table>
+<div>
+    <p class="text-right">
+    <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
+  </p>
+</div>
 
 {% endblock %}
