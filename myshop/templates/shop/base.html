@@ -15,9 +15,7 @@
 <a href="/" class="logo">О пользе мёда!</a>
 <a href="/" class="logo">Мои заказы</a>
 
-    <p class="text-right">
-    <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
-  </p>
+
 
 </div>
 <div id="subheader">
@@ -32,7 +30,9 @@
         Корзина пустая
         {% endif %}
         {% endwith %}
-
+    <p class="text-right">
+    <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
+  </p>
     </div>
 </div>
 <div id="content">
