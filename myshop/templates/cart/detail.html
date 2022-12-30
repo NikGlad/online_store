@@ -9,7 +9,7 @@
     <h1>Корзина покупок</h1>
   <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">В магазин</a>
-    <a href="ordering/detail.html" class="button">Оформить заказ</a>
+        <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
   </p>
   <table class="cart">
     <thead>
