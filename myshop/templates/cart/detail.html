@@ -8,8 +8,8 @@
 {% block content %}
     <h1>Корзина покупок</h1>
   <p class="text-right">
-    <a href="{% url 'shop:product_list' %}" class="button light">В магазин</a>
-        <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
+    <a href="{% url 'shop:product_list' %}" class="button light">Добавить ещё товар</a>
+        <a href="{% url 'ordering:ordering' %}" class="button ord">Перейти к офрмлению</a>
   </p>
   <table class="cart">
     <thead>
@@ -58,9 +58,7 @@
     </body>
   </table>
 <div>
-    <p class="text-right">
-    <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
-  </p>
+
 </div>
 
 {% endblock %}

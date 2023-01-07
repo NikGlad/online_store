@@ -21,8 +21,15 @@
     font-weight: bold;
 }
 
-.button{
-    margin-top: 30px;
+a.button.ord{
+    margin-right: auto;
+    font-size:25px;
+    padding:10px 12px;
+    border:0;
+    background: #f8655e;
+    color: #000000;
+    border-radius:4px;
+    font-weight: bold;
 }
 
 .ord{
@@ -32,7 +39,36 @@
     font-weight: bold
 }
 
+.client-data{
+    background-color: #e6dec3;
+}
 
+.container {
+    font-size: 30px;
+
+}
+
+input[type="text"] {
+    width:300px;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:10px 12px;
+    border:0;
+    background:#efefef;
+    color:#666;
+    border-radius:4px;
+}
+
+.button-data{
+    margin-left: 250px;
+    font-size:30px;
+    padding:10px 12px;
+    border:0;
+    background: #f8655e;
+    color: #000000;
+    border-radius:4px;
+    font-weight: bold;
+}
 /*here*/
 
 

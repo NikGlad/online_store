@@ -2,15 +2,31 @@
 {% load static %}
 
 {% block title %}
-  Корзина покупок
+  Оформление заказа
 {% endblock %}
 
 {% block content %}
+<div class="client-data">
     <h1>Оформеление заказа</h1>
     <p class="ord">Общая стоимость {{ cart.get_total_price }}р</p>
+<form action="#">
+  <div class="container">
+
+    <label for="telephon"><b>Телефон</b></label>
+    <input type="text" placeholder="Введите телефон" name="telephon" required><br><br>
+
+    <label for="name"><b>Имя</b></label>
+    <input type="text" placeholder="Введите имя" name="name" required><br><br>
+
+    <label for="adres"><b>Адрес</b></label>
+    <input type="text" placeholder="Введите адрес доставки" name="adres" required>
+      <a href="#" class="button-data">Оформить заказ</a>
+  </div>
+</form>
+</div>
   <p class="text-right">
-    <a href="{% url 'shop:product_list' %}" class="button light">В магазин</a>
-        <a href="{% url 'ordering:ordering' %}" class="button">Оформить заказ</a>
+    <a href="{% url 'shop:product_list' %}" class="button light">Добавить ещё товар</a>
+
 
   </p>
   <table class="cart">
@@ -33,7 +49,6 @@
               </a>
             </td>
             <td>{{ product.name }}</td>
-
             <td>
               {{ item.quantity }}
             </td>
