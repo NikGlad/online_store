@@ -44,23 +44,23 @@ a.button.ord{
 }
 
 .container {
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
 input[type="text"] {
-    width:300px;
+    width:360px;
     font-size:20px;
     margin-bottom:10px;
     padding:10px 12px;
     border:0;
     background:#efefef;
-    color:#666;
+    color: #000000;
     border-radius:4px;
 }
 
 .button-data{
-    margin-left: 250px;
+    margin-left: 200px;
     font-size:30px;
     padding:10px 12px;
     border:0;
@@ -69,6 +69,7 @@ input[type="text"] {
     border-radius:4px;
     font-weight: bold;
 }
+
 /*here*/
 
 
