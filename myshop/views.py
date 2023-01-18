@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Product
+from .models import Product, Basket
 from cart.forms import CartAddProductForm
 
 
@@ -18,5 +18,8 @@ def product_detail(request, id, slug):
     return render(request, 'shop/product/detail.html', {'product': product,
                                                         'cart_product_form': cart_product_form})
 
-def ordering(request): #создаём функцию
-    return render(request, "shop/ordering/ordering.html")
+def orders(request, id, slug):
+    product = get_object_or_404(Product, id=id, slug=slug, available=True)
+    cart_product_form = CartAddProductForm()
+    return render(request, 'shop/orders/orders.html', {'product': product,
+                                                        'cart_product_form': cart_product_form})

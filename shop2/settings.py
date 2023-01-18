@@ -21,6 +21,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 CART_SESSION_ID = 'cart'
+ORDERS_SESSION_ID = 'orders'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -38,7 +39,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myshop.apps.MyshopConfig',
     'cart.apps.CartConfig',
-    'ordering.apps.OrderingConfig',
+    'orders.apps.OrdersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,10 +88,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'shop2',
-        'USER' : 'postgres',
-        'PASSWORD' : 'nn27012006',
-        'HOST' : 'localhost',
-        'PORT' : '5432',
+        'USER': 'postgres',
+        'PASSWORD': 'nn27012006',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -133,4 +134,3 @@ STATIC_URL = '/static/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

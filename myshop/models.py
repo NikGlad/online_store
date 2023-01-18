@@ -25,3 +25,12 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('myshop:product_detail', args=[self.id, self.slug])
+
+class Basket(models.Model):
+    name = models.CharField(max_length=150)
+    phone = models.TextField(max_length=150)
+    product = models.ForeignKey(Product, on_delete=models.Model,
+                                default='', blank=True, null=True)
+
+    def __str__(self):
+        return  self.name
