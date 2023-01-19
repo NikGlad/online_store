@@ -2,36 +2,27 @@
 {% load static %}
 
 {% block title %}
-  Корзина покупок
+  Мои заказы
 {% endblock %}
 
 {% block content %}
-    <h1>Корзина покупок</h1>
+    <h1>Мои заказы</h1>
   <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">Добавить ещё товар</a>
-    <form method="POST" action="{% url 'order:order' %}">
-    {% csrf_token %}
-         Имя: <input type="text" name="username" /><br>
-         Телефон: <input type="text" name="phone" />
-        <input type="text" value="{{ cart.cart.keys }}" name="order"><br>
-
-         <input type="submit" value="Оформить заказ">
-   </form>
   </p>
+
   <table class="cart">
     <thead>
       <tr>
         <th></th>
         <th>Товар</th>
-        <th>Обновить кол-во</th>
-        <th>Удалить</th>
         <th>Кол-во</th>
         <th>Цена за шт</th>
         <th>Общая стоимость</th>
       </tr>
     </thead>
     <body>
-      {% for item in cart %}
+      {% for item in order %}
         {% with product=item.product %}
           <tr>
             <td>
@@ -40,15 +31,6 @@
               </a>
             </td>
             <td>{{ product.name }}</td>
-            <td>
-              <form action="{% url 'cart:cart_add' product.id %}" method="post">
-                {{ item.update_quantity_form.quantity }}
-                {{ item.update_quantity_form.update }}
-                <input type="submit" value="Обновить">
-                {% csrf_token %}
-              </form>
-            </td>
-            <td><a href="{% url 'cart:cart_remove' product.id %}">Удалить</a></td>
             <td>
               {{ item.quantity }}
             </td>

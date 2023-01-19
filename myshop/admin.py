@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
-from .models import Product, Basket
+from .models import Product, Order
 
 
 @admin.register(Product)
@@ -19,6 +19,6 @@ class ProductAdmin(admin.ModelAdmin):
     image_show.__name__ = "Картинка"
 
 
-@admin.register(Basket)
-class BasketAdmin(admin.ModelAdmin):
-    list_display = ['name', 'phone', 'product']
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ['name', 'phone', 'order']

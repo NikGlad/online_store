@@ -21,7 +21,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 CART_SESSION_ID = 'cart'
-ORDERS_SESSION_ID = 'orders'
+ORDER_SESSION_ID = 'order'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -39,7 +39,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myshop.apps.MyshopConfig',
     'cart.apps.CartConfig',
-    'orders.apps.OrdersConfig',
+    'order.apps.OrderConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -72,6 +72,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'cart.context_processors.cart',
+                'order.context_processors.order',
             ],
         },
     },
