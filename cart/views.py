@@ -10,6 +10,7 @@ def cart_add(request, product_id):
     cart = Cart(request)
     product = get_object_or_404(Product, id=product_id)
     form = CartAddProductForm(request.POST)
+    # print(request.POST['cart.cart.keys'])
     if form.is_valid():
         cd = form.cleaned_data
         cart.add(product=product,
@@ -31,3 +32,4 @@ def cart_detail(request):
         item['update_quantity_form'] = CartAddProductForm(initial={'quantity': item['quantity'],
                                                                    'update': True})
     return render(request, 'cart/detail.html', {'cart': cart})
+

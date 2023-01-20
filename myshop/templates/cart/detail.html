@@ -9,14 +9,7 @@
     <h1>Корзина покупок</h1>
   <p class="text-right">
     <a href="{% url 'shop:product_list' %}" class="button light">Добавить ещё товар</a>
-    <form method="POST" action="{% url 'order:order' %}">
-    {% csrf_token %}
-         Имя: <input type="text" name="username" /><br>
-         Телефон: <input type="text" name="phone" />
-        <input type="text" value="{{ cart.cart.keys }}" name="order"><br>
 
-         <input type="submit" value="Оформить заказ">
-   </form>
   </p>
   <table class="cart">
     <thead>
