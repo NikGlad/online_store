@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed1ac666-4072-41a3-9391-432a34411067" name="Changes" comment="25.01.2">
+    <list default="true" id="ed1ac666-4072-41a3-9391-432a34411067" name="Changes" comment="28.01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/templates/about_us/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/templates/about_us/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/templates/contacts/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/templates/contacts/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myshop/templates/orders/order/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/templates/orders/order/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/templates/orders/order/created.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/templates/orders/order/created.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/templates/shop/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Проекты програмирование/Taskmanager" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -89,6 +90,9 @@
       <workItem from="1674662794642" duration="295000" />
       <workItem from="1674814859500" duration="501000" />
       <workItem from="1674890973027" duration="4619000" />
+      <workItem from="1674895756260" duration="513000" />
+      <workItem from="1675078019560" duration="412000" />
+      <workItem from="1675147088689" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="25.01.2">
       <created>1674662858447</created>
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674662858447</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="28.01">
+      <created>1674896220169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674896220169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="25.01.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="25.01.2" />
+    <MESSAGE value="28.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="28.01" />
   </component>
 </project>

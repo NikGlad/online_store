@@ -70,6 +70,17 @@ input[type="text"] {
     font-weight: bold;
 }
 
+#about {
+    font-size: 30px;
+    background-image: url("../img2/8.jpg");
+    background-size: 100%;
+}
+
+#med {
+    font-size: 15px;
+    color: #f24040;
+}
+
 /*here*/
 
 
